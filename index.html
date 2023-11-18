@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập lớn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<body class="home-page">
+    <div class="header-warrap">
+        <div id="app">
+            <header>
+                <div class="wp-header">
+                    <nav class="nav">
+                        <div class="task_bar">
+                            <button class="button_list_item" style="cursor:pointer" id="btn_list"></button>
+                        </div>
+                        <!-- <div class="task_bar">
+                            <a href="#"><i class="fa-solid fa-bars"></i>
+                        </div> -->
+                            <ul class="home_list">
+                                <li class="home_item1">
+                                    <a href="index1.html">
+                                        <span class="stackoverflow"><i class="fa-brands fa-stack-overflow"></i> Stack </span>
+                                    </a>
+                                </li>
+                                <li class="home_item"> <a href="about.html">About</a></li>
+                                <li class="home_item"><a href="#">Product</a></li>
+                                <li class="home_item"><a href="lead.html">For Teams</a></li>
+                            </ul>
+                            <div class="box">  
+                                <input type="text" placeholder="Search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <ul class="home_list1">  
+                                <li style="padding: 5px; color: #0077cc;"><a href="login.html">Log in</a></li>
+                                <li style="padding: 5px; color: #0077cc;"><a href="signup.html">Sign up</a></li></li>
+                            </ul>
+                    </nav>
+                </div>
+            </header>
+            <nav class="nav1" id="nav" style="display:none">
+                <div class="item_nav">
+                    <button href="#" id="home" onClick="reply_click(this.id)"><i class="fa-solid fa-house fa-beat-fade"></i>Home</button>
+                    <button href="#" id="question" onClick="reply_click(this.id)"><i class="fa-solid fa-question fa-beat-fade"></i>Question</button>
+                    <button href="#" id="tag" onClick="reply_click(this.id)"><i class="fa-solid fa-tag fa-beat-fade"></i>Tag</button>
+                </div>
+        
+                <div class="item_nav">
+                    <button href="#" id="user" onClick="reply_click(this.id)"><i class="fa-solid fa-user fa-beat-fade"></i> Users</button>
+                    <button href="#" id="companies" onClick="reply_click(this.id)"><i class="fa-solid fa-building fa-beat-fade"></i>Companies</button>
+                </div>
+        
+                <div class="item_nav">
+                    <button href="#" id="collective1" onClick="reply_click(this.id)"><b>Collective</b></button>
+                    <button href="#" id="collective2" onClick="reply_click(this.id)"><img src="images/star.png" height="10px" style="margin:3px">Explore clollective</button>
+        
+                </div>
+        
+                <div class="item_nav">
+                    <button href="#" id="lab" onClick="reply_click(this.id)"><b>Labs</b></button>
+                    <button href="#" id="diss" onClick="reply_click(this.id)"><i class="fa-solid fa-comment fa-beat-fade"></i>Disscusion</button>
+                </div>
+        
+                <div class="item_nav">
+                    <b>Teams</b><br>
+                    <p>Stack Overflow for Teams – Start collaborating and sharing organizational knowledge.</p>
+                    <img src="images/nav_img.png" width="100px" style="margin-left: 60px;"><br>
+                    <br>
+                    <form action="">
+                        <input type="submit" value="Create a free team" style="width:180px;background-color: orange;padding:10px;border-radius: 5px;align:center;margin-left:20px"><br>
+                        <br><br>
+                        <a href="#" style="margin-left: 60px;">Why teams?</a>
+                    </form>
+                </div>
+            </nav>
+            <!-- End header -->
+            <!-- <div id="scrollToTopBtn" onclick="scrollToTop()">
+                <img src="images/top.png">
+            </div> -->
+            <div id="wp-content">
+                <section id="head-content">
+                    <div >
+                        <div class="box" style="border-radius: 5px 5px 0px 5px ;"></div>
+                        <div class="box" style="color: #382E0F; border-radius: 0px 5px 5px 5px; margin-left: 50px;opacity: 0.2;"></div>
+                    </div>
+                    <span class="box-class-1"></span>
+                    <span class="box-class-2"></span>
+                    <span class="box-class-3"></span>
+                    <span class="box-class-4"></span>
+                    <span class="box-class-5"></span>
+                    <span class="box-class-6"></span>
+                    <span class="box-class-7"></span>
+                    <span class="box-class-8"></span>
+                    <div class="wp-line">
+                        <img src="./images/illo-code.svg" alt="ABC" class="line-white">
+                    </div>
+                    <div class="wp-line2">
+                        <img src="./images/illo-code.svg" alt="AVC" class="line-white">
+                    </div>
+                        <div class="wp-loop-key">
+                            <div class="loop">
+                                <div class="icon-loop">
+                                    <i class="fa-solid fa-magnifying-glass fa-beat-fade icon2"></i>
+                                </div>
+                                <p class="title-loop">
+                                    Find the best answer to your technical question, help others answer theirs
+                                </p>
+                                <button class="btn-loop">
+                                    Join the community
+                                </button>
+                            
+                                <div class="search-content">
+                                    <span>or</span>
+                                    <a href="">search content</a>
+                                </div>
+                            </div>
+                            
+                            <div class="key">
+                                <div >
+                                    <i class="fa-sharp fa-solid fa-lock fa-beat icon-key"></i>
+                                </div>
+                                <p class="title-loop">
+                                    Want a secure, private space for your technical knowledge?
+                                </p>
+                                <button class="bnt-key">
+                                    Discover Teams
+                                </button>
+                            </div>
+                        </div>
+                        <div class="wp-intro">
+                                <p>Every</p>
+                                <span style="color: #E7700D;"> mobile developer</span>
+                                has a tab open to Stack Overflow 
+                        </div>
+                        <div style="background-color: #636B74; width:65px ; height:10px; position: absolute; border-radius: 4px; margin-top: 550px;"></div>
+                        <div class="b-bottom">
+                            <div>
+                                <h2>100+ million</h2>
+                                <p>monthly visitors to Stack Overflow & Stack Exchange</p>
+                            </div>
+                            <div>
+                                <h2>45.1+ billion</h2>
+                                <p>monthly visitors to Stack Overflow & Stack Exchange</p>
+                            </div>
+                            <div>
+                                <h2>191% ROI</h2>
+                                <p>monthly visitors to Stack Overflow & Stack Exchange</p>
+                            </div>
+                            <div>
+                                <h2>5,000+</h2>
+                                <p>monthly visitors to Stack Overflow & Stack Exchange</p>
+            
+                            </div>
+                        </div>
+
+            </div>
+            <div class="left-right">
+                <div class="img-left">
+                    <div class="img-left-top">
+                        <div>
+                            <img src="images/logo.jpg">
+                            <img src="https://cdn.sstatic.net/Img/home/illo-public.svg?v=14bd5a506009">
+                        </div>
+                    </div>
+                    <div class="img-left-bottom">
+                        <h2>
+                            A public platform building the definitive collection of coding questions &amp; answers
+                        </h2>
+                        <p>A community-based space to find and contribute answers to technical challenges, and one of the most popular websites in the world.</p>
+                        <button style="background-color:#ff6600 ;">Join the community</button>
+                        <p>or
+                            <a href="#"> search content</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="img-right">
+                    <div class="img-left-top">
+                        <div>
+                            <img src="images/logo.jpg">
+                            <img src="https://cdn.sstatic.net/Img/home/illo-teams.svg?v=7e543f14fcc0">
+                        </div>
+                    </div>
+                    <div class="img-left-bottom">
+                        <h2>
+                            A public platform building the definitive collection of coding questions &amp; answers
+                        </h2>
+                        <p>A community-based space to find and contribute answers to technical challenges, and one of the most popular websites in the world.</p>
+                        <button>For large oranizations</button>
+                        <button>For small teams</button>
+                    </div>
+                </div>
+            </div>
+    
+                </section>
+                <section id="organizations">
+                    <div class="wp-organizations">
+                            <p style="font-size: 19px; text-align: center;margin-top: 140px; margin-bottom: 20px;">Thousands of organizations around the globe use Stack Overflow for Teams</p>
+                            <div class="slideshow-container">
+                                <div class="mySlides fade">
+                                    <div class="numbertext">1 / 3</div>
+                                    <img src="images/slide/1.PNG" style="width:100% ;height: 150px;">
+                                    
+                                </div>
+                
+                                <div class="mySlides fade" style="
+                                display: none;">
+                                    <div class="numbertext">2 / 3</div>
+                                    <img src="images/slide/2.PNG" style="width:100% ;height: 150px;">
+                                    
+                                </div>
+                
+                                <div class="mySlides fade" style="
+                                display: none;">
+                                    <div class="numbertext">3 / 3</div>
+                                    <img src="images/slide/3.PNG" style="width:100% ;height: 150px;">
+                                    
+                                </div>
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                            <br>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                            </div>
+                            <div style="margin-bottom: 40px;"></div>
+                    </div>
+                </section>
+                <section id="p-wrapper-home">
+                    <div class="cus-top-bottom">
+                            <div class=" cus-left-right ">
+                                <img src="images/anh/1.png " width="20% " height="200px " style="margin-top: 150px;">
+                                <img src="images/anh/2.png " width="40%" height="300px" style=" margin-top: 40px;">
+                                <img src="images/anh/3.png " width="20% " height="200px " style="margin-top: 150px;">
+                            </div>
+                        <div class="wp-cus-middle-texbox">
+                            <div class="cus-middle " style="position: relative; padding: 20px; padding-top: 150px;">
+                                <img src="images/anh/4.PNG">
+                                <h2 style="color:#fff;font-size: 30px;">Capture your company’s knowledge and context in a</h2>
+                                <h2 style="color:#fff;font-size: 30px;margin-bottom: 40px"> discoverable format to <span style="color: #ff6600;">unblock your team</span></h2>
+                
+                                <button style="background-color: #0077cc;
+                                border-radius: 10px; padding: 12px 32px;color: white;font-weight:bold ;">Take a tour of Teams</button>
+                            </div>
+                            <div class="tex-top-bottom ">
+                                <div class="tex-top-bottom-a ">
+                                   <i class="fa-solid fa-circle-check fa-beat-fade" style="color: #03a081;"></i>
+                                    <h3>Increase productivity</h3>
+                                    <p>If somebody somewhere has the right answer, suddenly you have it too. Collaborate better in a remote-first world.</p>
+                                </div>
+                                <div class="tex-top-bottom-a ">
+                                   <i class="fa-solid fa-circle-check fa-beat-fade" style="color: #03a081;"></i>
+                                    <h3>Accelerate time to market</h3>
+                                    <p>Shorten the time between initial idea and complete product. Take delays and misinformation out of the equation.</p>
+                                </div>
+                                <div class="tex-top-bottom-a ">
+                                   <i class="fa-solid fa-circle-check fa-beat-fade" style="color: #03a081;"></i>
+                                    <h3>Protect institutional knowledge</h3>
+                                    <p>People come and people go, but if you capture their contributions in one central place, that expertise sticks around.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section id="target">
+                    <div class="wp-target">
+                        <div class="wp-i-custum">
+                            <div class="i-custum">
+                                <h1 style="padding: 10px; font-size: 40px;font-weight:700;">Ensure your company stays on course</h1>
+                                <p style="font-size: 19px; margin-bottom: 40px;">Here are just a few types of technologists that we help.</p>
+                                <div class="i-custum-top">
+                                    <div class="i-custum-top-a">
+                                        <i class="fa-solid fa-fire fa-beat-fade" style="color: #e21d1d; font-size: 80px;"></i>
+                                        <h3 style="margin-top: 20px;">DevOps engineers</h3>
+                                        <p style="margin-top: 10px;">Shipping new products and features requires teamwork and coordination. Forget checklists and long docs no one ever reads.</p>
+                                    </div>
+                                    <div class="i-custum-top-a">
+                                        <i class="fa-solid fa-database fa-beat-fade" style="color: #1656c5; font-size: 80px;"></i>
+                                        <h3>Data scientists</h3>
+                                        <p style="margin-top: 10px;">Business decisions are better when backed by data. Give visibility to the data that support your strategies.</p>
+                                    </div>
+                                    <div class="i-custum-top-a">
+                                        <i class="fa-brands fa-uncharted fa-beat-fade" style="color: #295fbc; font-size: 80px;"></i>
+                                        <h3>Software engineers</h3>
+                                        <p style="margin-top: 10px;">Help engineers be more efficient and streamline knowledge sharing using a tool they already love and trust.</p>
+                                    </div>
+                                    <div class="i-custum-top-a">
+                                        <i class="fa-solid fa-handshake-angle fa-beat-fade" style="color: #ce9a69;font-size: 80px;"></i>
+                                        <h3>Support teams</h3>
+                                        <p style="margin-top: 10px;">Level up your support by providing information to your customers using a natural interface: questions and answers.</p>
+                                    </div>
+                                    <div class="i-custum-top-a">
+                                        <i class="fa-solid fa-person-rays fa-beat-fade" style="color: #b89c75;font-size: 80px;"></i>
+                                        <h3>Engineering leaders</h3>
+                                        <p style="margin-top: 10px;">Help your team get the information they need to do their job - reduce burnout and help engineers grow and learn together.</p>
+                                    </div>
+                                </div>
+                                <div class="fee-combo">
+                                    <div class="combo1">
+                                        <div style="width: 50px; height: 30px; background-color: #E7700D; border-radius: 4px; padding: 5px; color: white; margin: 30px;">Free</div>
+                                        <div style="font-size: 27px; padding: 12px 0px 0px; margin: -20px 0px 6px;font-weight: bold; margin-left: -230px;">Free</div>
+                                        <p style="font-weight: 100; margin-left:-135px ;">No credit card required</p>
+                                        <!-- <hr style="font-size: 20px; color: #0077cc;"> -->
+                                        <div style="color: orange;">------------------------------------------------------------------</div>
+                                        <div class="ul">
+                                            <ul>
+                                                <li><i class="fa-solid fa-bullhorn fa-beat-fade" style="color: #e9723f; font-size: 25px;"></i>ChatOps integrations - Slack & Microsoft Teams</li>
+                                                <li><i class="fa-solid fa-lock fa-beat-fade" style="color: #5bd053; font-size: 25px;"></i>Your own private space hosted on stackoverflowteams.com</li>
+                                                <li><i class="fa-solid fa-store fa-beat-fade" style="color: #3770d2; font-size: 25px;"></i>Structured and searchable knowledge base</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <button class="fee-combo-bnt">Create a free Team </button>
+                                        <p style="color: #A7BFDB;">Always free up to 50 teammates</p>
+                                    </div>
+                                    <div class="combo2">
+                                        <div style="width: 50px; height: 30px; background-color: #C8CCD0; border-radius: 4px; padding: 5px; color: black; margin: 30px;">Basic</div>
+                                        <div style="font-size: 27px; padding: 12px 0px 0px; margin: -20px 0px 6px;font-weight: bold; margin-left: -170px;">$6.50 USD</div>
+                                        <p style="font-weight: 100; margin-left:-140px ;">per teammate / month</p>
+                                        <div style="color: #E2E5E7;">------------------------------------------------------------------</div>
+                            
+                                        <div class="ul">
+                                            <ul>
+                                                <li><i class="fa-solid fa-key fa-beat-fade" style="color: #98af46; font-size: 25px;"></i>Single sign-on (SSO) with SAML + Okta integration</li>
+                                                <li><i class="fa-solid fa-bullhorn fa-beat-fade" style="color: #e9723f; font-size: 25px;"></i>ChatOps integrations - Slack & Microsoft Teams</li>
+                                                <li><i class="fa-solid fa-lock fa-beat-fade" style="color: #5bd053; font-size: 25px;"></i>Your own private space hosted on stackoverflowteams.com</li>
+                                                <li><i class="fa-solid fa-store fa-beat-fade" style="color: #3770d2; font-size: 25px;"></i>Structured and searchable knowledge base</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <button class="fee-combo-bnt2">Get started </button>
+                                        <p style="color: #A7BFDB;">Up to 250 teammates</p>
+                                    </div>
+                                    <div class="combo3">
+                                        <div class="recommended">
+                                            <span style="font-weight:600; margin-left: 20px;">RECOMMENDED</span>
+                                            <span   style="margin-right: 20px;" ><i class="fa-solid fa-leaf fa-beat-fade" style="color: #3dc93b;"></i></span>
+                                        </div>
+                                        <div style="width: 90px; height: 30px; background-color: #3B4045; border-radius: 4px; padding: 5px; color: white; margin: 30px;">Business</div>
+                                        <div style="font-size: 27px; padding: 12px 0px 0px; margin: -20px 0px 6px;font-weight: bold; margin-left: -150px;">$13.50 USD</div>
+                                        <p style="font-weight: 100; margin-left:-135px ;">per teammate / month</p>
+                                        <div style="color: #E2E5E7;">------------------------------------------------------------------</div>
+                                     
+                                        <div class="ul">
+                                            <p style="font-weight: 100; margin-left:-90px ;"><i class="fa-solid fa-plus fa-beat-fade" style="color: #68c247;font-size: 25px;"></i> Long-form knowledge with Articles</p>
+                                            <ul>
+                                                <li><i class="fa-solid fa-file fa-beat-fade" style="color: #3460ad;font-size: 25px;"></i> Additional integrations — ChatOps, Jira, GitHub & Okta</li>
+                                                <li><i class="fa-solid fa-tag fa-beat-fade" style="color: #55a937;font-size: 25px;"></i> Group content together into Collections</li>
+                                                <li><i class="fa-solid fa-calendar-days fa-beat-fade" style="color: #e6b994;font-size: 25px;"></i> Usage and adoption metrics</li>
+                                                <li><i class="fa-solid fa-chart-simple fa-beat-fade" style="color: #4ab06e;font-size: 25px;"></i> Priority customer support</li>
+                                                <li><i class="fa-solid fa-wrench fa-beat-fade" style="color: #217327;font-size: 25px;"></i> Content Health tools</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <button class="fee-combo-bnt3">Get started</button>
+                                        <p style="color: #A7BFDB;">Unlimited teammates</p>
+                                    </div>
+                                    <div class="combo4">
+                                        <div style="width: 90px; height: 30px; background-color: #2B2D6E; border-radius: 4px; padding: 5px; color: white; margin: 30px;">Enterprise</div>
+                                        <div style="font-size: 27px; padding: 12px 0px 0px; margin: -20px 0px 6px;font-weight: bold; margin-left: -100px;">Custom pricing</div>
+                                        <p style="font-weight: 100; margin-left:-85px ;">Let’s talk about what you need</p>
+                                        <div style="color: #E2E5E7;">------------------------------------------------------------------</div>
+                                        <p style="font-weight: 100; margin-left:-80px ;"> <i class="fa-solid fa-plus fa-beat-fade" style="color: #68c247;font-size: 25px;"></i> Premium features of Business plus…</p>
+                                        <ul>
+                                            <li><i class="fa-solid fa-user-group fa-beat-fade" style="color: #1e4b99;font-size: 25px;"></i> Unlimited Teams within your instance</li>
+                                            <li><i class="fa-solid fa-mountain-sun fa-beat-fade" style="color: #63bf8b;font-size: 25px;"></i> Flexible hosting options — cloud or on-premisesm</li>
+                                            <li><i class="fa-solid fa-code fa-beat-fade" style="color: #8666c2;font-size: 25px;"></i> Robust read and write API</li>
+                                            <li><i class="fa-solid fa-question fa-beat-fade" style="color: #89a456;font-size: 25px;"></i> Your own customer success and community building representative</li>
+                                            <li><i class="fa-solid fa-shield-virus fa-beat-fade" style="color: #43a854;font-size: 25px;"></i> 99.5% uptime SLA and priority support</li>
+                                        </ul>
+                                        <button class="fee-combo-bnt4">Request a demo </button>
+                                        <p style="color: #A7BFDB;">Unlimited teammates</p>
+                                    </div>
+                                </div>
+                                <div class="i-custum-top">
+                                    <div class="i-custum-top-a1">
+                                        <p>A Forrester Consulting study shows <span>191% return on investment</span> with Stack Overflow for Teams.</p>
+                                    </div>
+                                    <div class="i-custum-top-a1">
+                                        <p>The world’s largest telecom firm <span>saved $10M</span> in deflected support cases with our centralized knowledge base.</p>
+                                    </div>
+                                    <div class="i-custum-top-a1">
+                                        <p>Subject-matter experts at software platform Unqork had <span>27% more time</span> to work on projects after using Teams.</p>
+                                    </div>
+                                    <div class="i-custum-top-a1">
+                                        <p>You can save time and money with Stack Overflow for Teams.</p>
+                                        <button style="background-color: black;margin-top: 10px;
+                                        border-radius: 10px; padding: 10px 20px;font-weight: bold; color: #0077cc;border: solid 1px #0077cc;">Calculate your ROI</button>
+                                    </div>
+                                </div>
+                                <div class="wp-intergrates">
+                                    <div class="wp-img-micro">
+                                        <img src="./images/illo-integrations-left.png" alt="integrations-left.png "
+                                        width="330px" height="360px" >
+                                        <div><a href="https://www.microsoft.com/vi-vn/microsoft-teams/log-in" style="text-decoration: none; color: white;"><i class="fa-brands fa-microsoft" style="color: #3a5e9c;margin-right: 10px;"></i> Microsoft Teams</a></div>
+                                    </div>
+                                    
+                                    <div class="wp-intergrate-log">
+                                            <h1 style="font-size: 34px; margin-bottom: 20px;">Integrates with and improves other tools</h1>
+                                            <p style="font-size: 19px;margin-bottom: 20px;">All plans come with integrations for ChatOps tools 
+                                                <a href="#" style="color: #1B6AA3;">Slack</a> & <a href="#" style="color: #1B6AA3;">Microsoft Teams</a> 
+                                                in order to cut down on pings, limit distractions and make the tools even more powerful.
+                                                 Business and Enterprise customers get access to Jira, GitHub & Okta integrations.
+                                            </p>
+    
+                                            <div class="logo-inter">
+                                                <div class="background-logo">
+                                                    <a href="https://stackoverflowteams.com/teams/integrations/slack"><i class="fa-brands fa-slack" style="color: #7ec95e;font-size: 50px;"></i></a>
+                                                    
+                                                </div>
+                                                <div class="background-logo">
+                                                    <a href="https://stackoverflow.co/teams/integrations/microsoft-teams/"><i class="fa-solid fa-people-group" style="color: #86c185;font-size: 50px;"></i></a>
+                                                    
+                                                </div>
+                                                <div class="background-logo">
+                                                    <a href="https://stackoverflow.co/teams/integrations/github/"><i class="fa-brands fa-github" style="color: black;font-size: 50px;"></i></a>
+                                                    
+                                                </div>
+                                                <div class="background-logo">
+                                                    <a href="https://stackoverflow.co/teams/integrations/jira/"><i class="fa-brands fa-jira" style="color: #3f65a6;font-size: 50px;"></i></a>
+                                                    
+                                                </div>
+                                                <div class="background-logo">
+                                                    <a href="https://stackoverflow.co/teams/integrations/okta/"><i class="fa-solid fa-vial-circle-check" style="color: #824a7d;font-size: 50px;"></i></a>
+                                                </div>
+                                            </div>
+                                            <br> <br>
+                                            <div>Some of the premium features available with paid tiers</div>
+                                    </div>
+                                    <div class="wp-img-stack">
+                                        <div><a href="https://www.microsoft.com/vi-vn/microsoft-teams/log-in" style="color: white;"><i class="fa-brands fa-slack" style="color: #7ec95e;margin-right: 10px;"></i>Slack</a></div>
+                                        <img src="./images/illo-integrations-right.png" alt="integrations-right.png" width="330px" height="360px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                  
+                </section>
+                <section id="p-home-company">
+                    <div class="icon-container">
+                        <div class="reveal-item">
+                            <i class="fa-solid fa-key" style="color: #b6c832;"></i>
+                            <p>Robust read and write API</p>
+                        </div>
+                        <div class="reveal-item">
+                            <i class="fa-solid fa-lock" style="color: #6489c9;"></i>
+                            <p>Robust read and write API</p>
+                        </div>
+                        <div class="reveal-item">
+                            <i class="fa-brands fa-microsoft" style="color: #5884d0;"></i>
+                            <p>Robust read and write API</p>
+                        </div>
+                        <div class="reveal-item">
+                            <i class="fa-solid fa-headphones" style="color: #72a1f3;"></i>
+                            <p>Robust read and write API</p>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                            $(window).scroll(function () {
+                                $('.reveal-item').each(function () {
+                                    var position = $(this).offset().top;
+                                    var scroll = $(window).scrollTop();
+                                    var windowHeight = $(window).height();
+                                    if (scroll > position - windowHeight + 200) {
+                                        $(this).addClass('reveal');
+                                    }
+                                });
+                            });
+                        });
+                    </script>
+                </section>
+                <section id="explore-technical">
+    
+                </section>
+                <section id="private-community">
+    
+                </section>
+    
+        </div>
+            <!-- End wp - content -->
+            
+    </div>
+    
+    
+</body>
+<footer style="background-color: #382E0F;">
+    <table style="color:white ">
+        <tr>
+            <th style="width:100px "></th>
+            <th style="width:200px ">Stack overFlow</th>
+            <th style="width:200px ">PRODUCTS</th>
+            <th style="width:200px ">COMPANY</th>
+            <th style="width:300px ">STACK EXCHANGE NETWORK</th>
+            <th style="font-weight: lighter; ">
+                <a href="# ">Blog</a>
+                <a href="# ">Facebook</a>
+                <a href="# ">Twitter</a>
+                <a href="# "> LinkedLn</a>
+                <a href="# ">Intalgram</a>
+            </th>
+        </tr>
+        <tr style="color:white;">
+            <td></td>
+            <td>Questions</td>
+            <td>Teams</td>
+            <td>About</td>
+            <td>Technologiy</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Helps</td>
+            <td>Advertising</td>
+            <td>Press</td>
+            <td>Cultures& reactions</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Collectives</td>
+            <td>Works here</td>
+            <td>Life & art</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Talent</td>
+            <td>Legal</td>
+            <td>Scient</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Privacy Policy</td>
+            <td>Professionnal</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Term of service</td>
+            <td>Business</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Contact us</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</footer>
+</div>
+<!-- //3 gạch ngang -->
+<script>
+        var show_nav = 0,
+        last_button = "home ";
+        document.getElementById('btn_list').addEventListener('click', button_list_pressed);
+
+    function button_list_pressed() {
+        if (show_nav == 0) {
+            show_nav = 1;
+            document.getElementById('nav').style.display = "block ";
+
+            document.getElementById('btn_list').className = "nav_transform1 ";
+        } else {
+            show_nav = 0;
+            document.getElementById('nav').style.display = "none ";
+            document.getElementById('btn_list').className = 'button_list_item';
+
+        }
+    }
+
+    function reply_click(id) {
+        document.getElementById(last_button).style.backgroundColor = "white ";
+        document.getElementById(id).style.backgroundColor = "gray ";
+        last_button = id
+    };
+
+</script>
+
+</html>
